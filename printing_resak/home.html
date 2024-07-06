@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>PRINTING RESAK</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdn.datatables.net/v/bs5/jq-3.7.0/jszip-3.10.1/dt-2.0.6/af-2.7.0/b-3.0.2/b-colvis-3.0.2/b-html5-3.0.2/b-print-3.0.2/cr-2.0.1/date-1.5.2/fc-5.0.0/fh-4.0.1/kt-2.12.0/r-3.0.2/rg-1.5.0/rr-1.5.0/sc-2.4.2/sb-1.7.1/sp-2.3.1/sl-2.0.1/sr-1.4.1/datatables.min.css" rel="stylesheet">
+ 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
+		<script src="https://cdn.datatables.net/v/bs5/jq-3.7.0/jszip-3.10.1/dt-2.0.6/af-2.7.0/b-3.0.2/b-colvis-3.0.2/b-html5-3.0.2/b-print-3.0.2/cr-2.0.1/date-1.5.2/fc-5.0.0/fh-4.0.1/kt-2.12.0/r-3.0.2/rg-1.5.0/rr-1.5.0/sc-2.4.2/sb-1.7.1/sp-2.3.1/sl-2.0.1/sr-1.4.1/datatables.min.js"></script>
+		
+		
+		<style>
+        body {
+            background-image: url('pastel1.jpg');
+			line-height: 1.6;
+			padding: 2px;
+            background-size: cover;
+			text-align:center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+			background-size: 100%;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+		header {
+			background-color: #E5D0E3;
+			color: #000000;
+			padding: 10px 0;
+			text-align: center;
+		}
+		nav ul {
+			list-style: none;
+		}
+		nav ul li {
+			display: inline;
+			margin-right: 10px;
+			position: relative;
+		}
+		nav a {
+			text-decoration: none;
+			color: #fff;
+			padding: 10px 20px;
+			display: inline-block;
+		}
+		nav li a:hover:not(.active) {
+			background-color: #ddd;
+		}
+		.container {
+			position: center;
+			justify-content: space-between;
+            width: 70%;
+            margin:  auto;
+            background-color: #E0BBE4;
+			text-align: center;
+            padding: 70px;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+		footer {
+			background-color:#E5D0E3; 
+            color:#000000; 
+			padding: 10px 0;
+			position: center;
+			text-align: center;
+			width:100%;
+			bottom: 0;
+		}
+		body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding:px;
+        }
+        header, footer {
+            background-color: #D5AAFF;
+            text-align: center;
+            padding: 15px;
+        } 
+		
+		</style>
+		
+	</head>
+	
+	<link rel="shortcut icon" type="image/jpg" href="faha printing.png">
+
+	<body>
+		<header>
+			<h1>WELCOME TO PRINTING RESAK </h1>
+			<nav>
+			<ul>
+				<li><a href="home.html"/>Home</a></li>
+				<li><a href="about.html"/>About</a></li>
+				<li><a href="contact.html"/>Contact</a></li>
+			</ul>
+			</nav>
+		</header>
+		<br>
+		<br>
+		<br>
+	<div class="container">
+	<main role="main"> 	
+		<br>
+			
+			<img src= "printer(3).jfif" width="600" height="350" alt="" class="post-photo-full" />
+			<br>
+			<br>
+
+			<div class="post-blurb">
+				<p><a>Printing resak was a list of customers for <big>Faha Ikhlas Enterprise</big>
+				<br>				
+				which is located in the resak apartment next to jasmine college
+				<br><big>UiTM Puncak Perdana</big>. 
+				This list is made to ensure that the printing process is easier, <br>
+				faster and smoother.</a></p>
+			</div>
+
+			<td><a class="btn btn-success" href="login.php">Login</a></td>
+			<td><a class="btn btn-info" href="add_item.php">Add New Item</a></td>
+		</div>
+			
+			
+		
+		</div>
+		<br>
+		<br>
+		<br>
+		 <footer>
+			<p>&copy; 2024 Printing Resak. All rights reserved.</p>
+		</footer>
+	</body>
+
+</html>
+
+<?php
+$connect=mysqli_connect("localhost","root","","printing_resak");
+?>
+
+<script>
+$(document).ready(function(){
+	$('#view_data').DataTable();
+});
+</script>
